@@ -1,0 +1,127 @@
+.data-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .top, .middle, .bottom {
+
+        .title {
+            margin-bottom: 20px;
+        }
+        
+        .title-area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .select {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                .select-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+
+                .box {
+                    height: 28px;
+                }
+            }
+        }
+
+        .plot-area {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+
+            .plot {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: white;
+                -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                overflow: hidden;
+                flex: 1;
+
+                .title-bar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width: 100%;
+                    gap: 10px;
+                    margin-top: 20px;
+                    margin-left: 20px;
+        
+                    .bar {
+                        height: 30px;
+                        width: 8px;
+                        background: #29CC5F;
+                    }
+
+                    .plot-title {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+
+        .plot-area {
+
+            .right.plot {
+                display: flex;
+                flex: 2;
+                padding-bottom: 25px;
+
+                .title-group {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-bottom: auto;
+
+                    .title-bar-bottom-right {
+                        display: flex;
+                        gap: 10px;
+                        margin-left: 20px;
+                        margin-top: 20px;
+            
+                        .bar {
+                            height: 30px;
+                            width: 8px;
+                            background: #29CC5F;
+                        }
+
+                        .plot-title {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .select-bottom-right {
+                        display: flex;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                    
+                        .select-title {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-right: 10px;
+                        }
+
+                        .box {
+                            height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 20vw;
+    background: url('../../../public/img/background.svg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100wh;
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .logo {
+            display: flex;
+            flex: 1;
+
+            img {
+                max-width: 220px;
+                max-height: 220px;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+        .title {
+            display: flex;
+            flex-direction: column;
+            flex: 2.4;
+            gap: 20px;
+            
+            h1 {
+                font-size: 50px;
+                font-weight: 600;
+                color: white;
+            }
+  
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                text-align: justify;
+                color: white;
+            }
+        }
+    }
+  
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 35px;
+        margin-left: 20px;
+        height: 60px;
+        
+        input {
+            padding: 10px;
+            flex: 8;
+            border: 1px solid #333;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        button {
+            padding: 10px;
+            flex: 1;
+            color: white;
+            background-color: #333;
+            border: 1px solid #333;
+            border-radius: 0 5px 5px 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+  

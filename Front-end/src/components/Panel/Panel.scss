@@ -1,0 +1,208 @@
+.panel {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 25px;
+
+    .top {
+        display: flex;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        flex-direction: column;
+        overflow: hidden;
+        padding-bottom: 8px;
+
+        .search {
+            display: flex;
+            justify-content: center;
+            margin: 20px 20px 10px 20px;
+            height: 70px;
+            width: 60%;
+            
+            input {
+                padding: 10px;
+                flex: 8;
+                border: 1px solid #333;
+                border-radius: 5px 0 0 5px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+    
+            button {
+                padding: 10px;
+                flex: 1;
+                color: white;
+                background-color: #333;
+                border: 1px solid #333;
+                border-radius: 0 5px 5px 0;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            gap: 50px;
+            height: 30px;
+
+            .left {
+                display: flex;
+                flex: 1;
+
+                h1 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #333;
+                    margin-bottom: 5px;
+                    margin-left: 3px;
+                }
+            }
+
+            .right{
+                display: flex;
+                flex: 8;
+                justify-content: space-between;
+                margin-right: 30px;
+                
+                .button {
+                    font-size: 18px;;
+                    font-weight: 400;
+                }
+            }
+
+            .arrowDown {
+                cursor: pointer;
+            }
+        }
+
+        .row-l {
+
+            .col-left, .col-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .col {
+                    display: flex;
+                    gap: 5px;
+                }
+
+                .slider {
+                    display: flex;
+                    flex: 1;
+                }
+
+                .forms {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 8px;
+                    flex: 2;
+
+                    hr {
+                        width: 30px;
+                        border: 1px solid lightgray;
+                    }
+
+                    .form #outlined-adornment-price {
+                        height: 5px;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    flex: 1;
+                }
+            }
+
+            .col-left {
+                .left {
+                    flex: 0.8;
+                }
+                .slider {
+                    flex: 1.3;
+                }
+                .forms {
+                    flex: 1.4;
+                }
+            }
+
+            .col-more {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                gap: 8px;
+                border: 1px solid #333;
+                border-radius: 5px;
+                padding: 5px;
+                margin-right: 10px;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .left {
+            display: flex;
+            margin: 10px auto 10px 20px;
+
+            span {
+                font-size: 23px;
+                font-weight: 600;
+                color: #333;
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin: 10px 20px 10px auto;
+
+            .info {
+                
+                span {
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: #333;
+                }
+            }
+
+            .select {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-top: 3px;
+
+                .box {
+                    height: 28px;
+                }
+            }
+
+            .unfoldMore {
+                cursor: pointer;
+            }
+        }
+    }
+}
