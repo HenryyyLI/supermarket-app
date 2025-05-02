@@ -10,11 +10,11 @@ Check the design draft here 👉️https://www.figma.com/design/C0Gs7wvccClKINq0
 
 ---
 
-- Data Scraping: Python -- [Reqeusts]([Requests: HTTP for Humans™ — Requests 2.32.3 documentation](https://docs.python-requests.org/en/latest/index.html)), [Selenium]([The Selenium Browser Automation Project | Selenium](https://www.selenium.dev/documentation/)), [BeautifulSoup]([Beautiful Soup Documentation — Beautiful Soup 4.4.0 documentation](https://beautiful-soup-4.readthedocs.io/en/latest/)), etc.
-- Backend: Python -- [Flask]([Welcome to Flask — Flask Documentation (3.2.x)](https://flask.palletsprojects.com/en/latest/))
-- Data Base: [MongoDB]([Download MongoDB Community Server | MongoDB](https://www.mongodb.com/try/download/community))
-- Front-end: [React]([Quick Start – React](https://react.dev/learn)), [Node]([Node.js — Download Node.js®](https://nodejs.org/en/download)), [SCSS]([Sass: Install Sass](https://sass-lang.com/install/)), [React Router]([Docs Home v6.28.1 | React Router](https://reactrouter.com/6.28.1/home))
-- UI: [Material UI]([Overview - Material UI](https://mui.com/material-ui/getting-started/)), [Plotly]([Plotly javascript graphing library in JavaScript](https://plotly.com/javascript/))
+- Data Scraping: Python -- Reqeusts, Selenium, BeautifulSoup, etc.
+- Backend: Python -- Flask
+- Data Base: MongoDB
+- Front-end: React, Node.js, SCSS, React Router
+- UI: Material UI, Plotly
 
 ## Dependencies
 
