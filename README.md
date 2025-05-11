@@ -1,97 +1,130 @@
-## Prototype & UI Design
+# 🛒 Supermarket App
 
----
+A full-stack supermarket dashboard that seamlessly combines real-time data scraping, intelligent filtering, and multi-dimensional visualization. Designed to help users make smarter, more cost-effective grocery decisions, the platform enables efficient cross-supermarket product comparison based on price, brand, and detailed attributes — turning raw data into actionable shopping insights.
 
-Check the live demo here 👉️https://fmnpuv.axshare.com
+## 🔍 Key Features
 
-Check the design draft here 👉️https://www.figma.com/design/C0Gs7wvccClKINq0cimLF7/PYTHON-PROJECT?node-id=0-1&t=a6rjOJfwVpdokYmn-1
+- **⚙️ Full-Stack Architecture**
 
-## Structure
+  Built with React (frontend), Flask (backend), and MongoDB (database) to ensure modularity, scalability, and smooth integration across services.
 
----
+- **📊 Interactive Visualizations**
 
-- Data Scraping: Python -- Reqeusts, Selenium, BeautifulSoup, etc.
-- Backend: Python -- Flask
-- Data Base: MongoDB
-- Front-end: React, Node.js, SCSS, React Router
-- UI: Material UI, Plotly
+  Leverages Plotly and Material UI to deliver dynamic, interactive charts that visualize key sales metrics over time — enabling users to spot trends, compare performance, and interpret data at a glance.
 
-## Dependencies
+- **🔎 Smart Multi-Dimensional Filtering**
 
----
+  Enables deep data slicing by date, category, and other metadata through intuitive dropdowns, buttons, and interactive controls — ideal for customized analytics and user-driven insights.
 
-- Make sure MongoDB is available on your PC
+- **🕸️ Real-Time Data Scraping Engine**
 
-  - Download link 👉️https://www.mongodb.com/try/download/community
+  Integrates Python-based scraping tools (Requests, Selenium, BeautifulSoup) to fetch live e-commerce or supermarket data directly into the app with automation capabilities. (*Note: Due to compliance considerations, the scraping scripts are not included in the public repository.*)
 
-- Make sure Node is available on your PC
+- **🧩 Clean & Modular UI Architecture**
 
-  - Download link 👉️https://nodejs.org/en/download
+  Built with React and SCSS, the interface features a well-structured component hierarchy and consistent visual styling — resulting in a clean, coherent UI that enhances readability and user focus.
 
-- Make sure yarn is available on your PC
+## 📁 Project Structure
 
-  ```cmd
+```bash
+supermarket-app/
+├── backend/                # Flask backend code
+│   ├── server.py           # Application entry point, defines routes and API endpoints
+│   └── mongo_db.py         # MongoDB connection and query utilities
+├── frontend/               # React frontend code
+│   ├── public/             # Static assets and HTML template
+│   ├── src/                # Source code for the React app
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/          # Top-level page views
+│   │   ├── App.js          # Root component and router setup
+│   │   ├── AppContext.js   # Global state and context provider
+│   │   └── ...             # Other React modules
+│   └── package.json        # Frontend dependencies and scripts
+├── README.md               # Project documentation
+└── .gitignore              # Files and folders excluded from Git
+```
+
+## 🛠 Tech Stack
+
+- **Data Scraping**: Python — `requests`, `Selenium`, `BeautifulSoup`, etc.
+
+- **Backend**: Python — `Flask`
+
+- **Database**: `MongoDB`
+
+- **Frontend**: `React`, `Node.js`, `SCSS`, `React Router`
+
+- **UI & Visualization**: `Material UI`, `Plotly`
+
+## ⚙️ Dependencies
+
+- **MongoDB** – Required for data storage
+  👉 [Download MongoDB](https://www.mongodb.com/try/download/community)
+
+- **Node.js** – Required for running the frontend and installing packages
+  👉 [Download Node.js](https://nodejs.org/en/download)
+
+- **Yarn** – Package manager (alternative to npm)
+
+  ```bash
   npm install -g yarn
   ```
 
-- Make sure scss is available on your PC
+- **Sass (SCSS)** – For styling components
 
-  ```cmd
+  ```bash
   npm install -g sass
   ```
 
-- Make sure React is available on your PC (may be already contained in the *node_modules* file)
+- **React & Core Libraries** –  For building UI (if not already in `node_modules`)
 
-  ```cmd
-  cd your path to Supermarket APP/V2 Front-end/client
-  npm install react react-dom   # install with Node
-  yarn add react react-dom   # install with yarn
+  ```bash
+  yarn add react react-dom
   ```
 
-- Make sure React Router is available on your PC (may be already contained in the *node_modules* file)
+- **React Router** – For client-side routing (if not already in `node_modules`)
 
-  ```cmd
-  cd your path to Supermarket APP/V2 Front-end/client
-  npm install react-router-dom   # install with Node
-  yarn add react-router-dom   # install with yarn
+  ```bash
+  yarn add react-router-dom
   ```
 
-- Make sure Plotly is available on your PC (may be already contained in the *node_modules* file)
+- **Plotly.js** – For data visualization (if not already in `node_modules`)
 
-  ```cmd
-  cd your path to Supermarket APP/V2 Front-end/client
-  npm install react-plotly.js plotly.js   # install with Node
-  yarn add react-plotly.js plotly.js   # install with Node
+  ```bash
+  yarn add react-plotly.js plotly.js
   ```
 
-## Usage
+## 🚀 Setup & Usage
 
----
+1. **Clone the repository**
 
-1. Load the data file into your MongoDB
-
+   ```bash
+   git clone https://github.com/HenryyyLI/supermarket-app.git
+   cd supermarket-app
    ```
+
+2. **Load product data into MongoDB**
+
+   ```bash
    mongoimport --uri "mongodb://localhost:27017" --db mydb --collection mycollection --file products.json --jsonArray
    ```
 
-2. Run the server.py file to start server side
+3. **Start the backend server**
 
-   ```cmd
-   cd your path to Supermarket APP/V1 Backend
+   ```bash
+   cd backend
    python server.py
    ```
 
-3. Run the client side with yarn
+4. **Start the frontend application**
 
-   ```cmd
-   cd your path to Supermarket APP/V2 Front-end/client
+   ```bash
+   cd frontend
+   yarn install
    yarn start
    ```
 
-## Reference
+## Prototype & UI Design
 
----
-
-- Front-end Development: https://youtu.be/BCkWFblNLKU?si=P4ayd-eUfSWwWFIu
-- Flask+React: https://youtu.be/7LNl2JlZKHA?si=ps1ro2x5DdxDxv3P
-- UI Design: https://github.com/cruip/tailwind-dashboard-template/tree/main
+🧭 **Interactive Prototype**: [Preview on Axure](https://fmnpuv.axshare.com)
+🎨 **UI Design Draft**: [View on Figma](https://www.figma.com/design/C0Gs7wvccClKINq0cimLF7/PYTHON-PROJECT?node-id=0-1&t=a6rjOJfwVpdokYmn-1)
